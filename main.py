@@ -15,6 +15,7 @@ if __name__ == "__main__":
                                                  cache_dir='./model-bin/cache',
                                                  #local_files_only=True
                                                 )
+    print("update")
     print(model)
     print(model.config)
     print('load done model'.upper())
