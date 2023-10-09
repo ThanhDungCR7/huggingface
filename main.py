@@ -7,7 +7,7 @@ from datasets import load_metric
 import os
 import torch
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = ""
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
 
 if __name__ == "__main__":
     # tokenizer = AutoTokenizer.from_pretrained("xlm-roberta-base")
@@ -25,12 +25,12 @@ if __name__ == "__main__":
 
     print("load done dataset")
     
-    device = "cuda:0" if torch.cuda.is_available() else "cpu"
-    print(device)
-    train_dataset, valid_dataset = train_dataset.to(device), valid_dataset.to(device)
-    model     = model.to(device)
+    # device = "cuda:0" if torch.cuda.is_available() else "cpu"
+    # print(device)
+    # train_dataset, valid_dataset = train_dataset.to(device), valid_dataset.to(device)
+    # model     = model.to(device)
 
-    print('##########################################')
+    # print('##########################################')
 
     
 
